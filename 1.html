@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Number = parseInt(prompt(" Nhập số lượng số nguyên tố bạn cần:"));
+        let a = 1;
+        let b = "s";
+        for ( let N =2; a<=Number; N++) {
+            for (let i = 2; i<N; i++) {
+            if (N%i == 0) {
+                b = "t";
+                break;
+    
+            } else {
+                b = "s";
+            }
+        }
+            if (b =="s") {
+                a++;
+           console.log(N+ " ");
+            }
+        }
+    
+    </script>
+
+</body>
+</html>

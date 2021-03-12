@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p><input id="1" />ST1</p>
+        <p><input id="2" />ST2</p>
+        <p>Operator
+            <select id="tinh11">
+                <option >+</option>
+                <option >-</option>
+                <option >*</option>
+                <option >/</option>
+            </select>
+            <button id="tinh" onclick="tinhtoan()">Tisnh</button>
+        </p>
+        <p><div id="go">Ketqua:</p>
+    </form>
+        <script>
+            function tinhtoan() {
+            let st1 = document.getElementById("1").value;
+            let st2 = document.getElementById("2").value;
+            let a = document.getElementById('tinh11').value;
+            let b = document.getElementById('pt2').innerHTML;
+            let c = document.getElementById('pt3').innerHTML;
+            let d = document.getElementById('pt4').innerHTML;
+
+                if(a=="+") {
+                    let a1 = st1 +st2
+                    document.getElementById('go').value = a1;
+                }
+            }
+        </script>
+    
+
+</body>
+</html>
