@@ -9,23 +9,48 @@
 <body>
     <script>
         let Number = parseInt(prompt(" Nhập số lượng số nguyên tố bạn cần:"));
-        let a = 1;
-        let b = "s";
-        for ( let N =2; a<=Number; N++) {
-            for (let i = 2; i<N; i++) {
-            if (N%i == 0) {
-                b = "t";
-                break;
-    
-            } else {
-                b = "s";
-            }
+    let a = 1;
+    let b = "s";
+    for ( let N =2; a<=Number; N++) {
+        for (let i = 2; i<N; i++) {
+        if (N%i == 0) {
+            b = "t";
+            break;g5
+
+        } else {
+            b = "s";
         }
-            if (b =="s") {
-                a++;
-           console.log(N+ " ");
-            }
+    }
+        if (b =="s") {
+            a++;
+       document.write(N+ " ");
         }
+    }
+    // let n = parseInt(prompt("Moi ban nhap so nguyen"));
+    // if (n<=1) alert( n +" khong la SNT");
+    // else if (n==2 || n==3) alert( n +" la SNT" );
+    //     else{
+    //         let check = true;
+    //     for (let i = 2; i <= Math.sqrt(n) ; i++) {
+    //         if (n% i == 0){
+    //             check = false;
+    //             // alert(n + "ko la so nguyen to");
+    //             break;
+    //         }
+    //     }
+    //     // alert(n + " la sont");
+    //     if (check){
+    //         alert(n + " la so nguyen to");
+    //     }
+    //     else {
+    //         alert(n+ " khong la snt")
+    //     }
+    //         // let i = 2;
+    //         // if (i>Math.sqrt(n)) alert(n +" la SNT" );
+    //         // else if (n%i == 0) alert(n + " khong la SNT");
+    //         //     else i++;
+    // }
+
     
     </script>
 
